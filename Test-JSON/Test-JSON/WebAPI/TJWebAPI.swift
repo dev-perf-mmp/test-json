@@ -44,27 +44,16 @@ extension TJWebAPI
     /// - Parameter completion: Closure that will be invoked when a result is returned from server
     func getPersonDetails(completion: @escaping WebAPICompletionHandler)
     {
-        
-    }
-    
-    
-    /// API for registering push token
-    /// - parameter credentials: Credentials for registering push
-    /// - parameter completion:  Closure that will be invoked when a result is returned from server
-    func registerPush(withCredentials credentials : Dictionary<String, String>, completion : @escaping WebAPICompletionHandler)
-    {
-        let url            = appendHostName(urlPrefix: "notifications/create")
+        let url            = TJWebURL.person.url
         var request        = URLRequest(url: url)
-        let postData       = dataFromJSON(json: credentials)
-        request.httpMethod = "POST"
+        request.httpMethod = "GET"
         request            = setCommonHTTPHeaders(request: request)
-        request.httpBody   = postData
         callAsynchronousWebService(withRequest: request, andCompletionHandler: completion)
     }
 }
 
 // MARK:- Private methods
-extension EPWebAPI
+extension TJWebAPI
 {
     
     /// Makes asynchronous API calls
@@ -86,19 +75,6 @@ extension EPWebAPI
         }
         dataTask.resume()
     }
-    
-    /// Appends the url prefix to host name and returns the combined url
-    /// - parameter urlPrefix: URL prefix that need to be appended to host name
-    /// - returns: URL of combined host and prefix
-    fileprivate func appendHostName(urlPrefix : String) -> URL
-    {
-        var config = Configuration()
-        let host   = config.environment.api
-        var urlStr = host + urlPrefix
-        urlStr     = urlStr.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
-        return URL(string: urlStr)!
-    }
-    
     
     /// Appends common http headers to the project
     /// - parameter request: URL request to which the common header need to be added

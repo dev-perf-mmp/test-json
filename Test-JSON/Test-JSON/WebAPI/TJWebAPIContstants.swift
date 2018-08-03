@@ -28,8 +28,8 @@ enum TJAPI : String
 // MARK:- API URLs
 enum TJWebURL
 {
-    // Person URL (Count, FName, LName, City)
-    case person(Int, String, String, String)
+    // Person URL
+    case person
 }
 
 // Extension for URL creation
@@ -46,7 +46,7 @@ extension TJWebURL
         var returnURL = ""
         switch self
         {
-            case .person(count, fName, lName, city): returnURL = baseURL + "?rows=\(count)&fname=\(fname)&lname=\(lName)&city=\(city)&pretty=true"
+        case .person: returnURL = baseURL + "?fname={firstName}&lname={lastName}&city={city}&pretty=true"
         }
         // Escapes the URL
         let escapedURLString = returnURL.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)?.replacingOccurrences(of: "+", with: "%2B")
