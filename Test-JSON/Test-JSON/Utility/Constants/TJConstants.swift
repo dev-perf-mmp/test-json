@@ -21,4 +21,10 @@ struct TJConstants
         static let netSuccessTitle = "Welcome Back"
         static let netSuccessMsg   = "Your network connection seems fine now!"
     }
+    
+    // Cell Identifiers
+    struct CellIdentifiers
+    {
+        static let personCell = "personCell"
+    }
 }

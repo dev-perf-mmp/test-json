@@ -21,6 +21,20 @@ struct TJPerson: Codable
     // City
     var city: String?
     
+    // Full Name
+    var fullName: String?
+    {
+        var fullName = ""
+        if let fName = fname
+        {
+            fullName += fName + " "
+        }
+        if let lName = lname
+        {
+            fullName += lName
+        }
+        return fullName
+    }
     
     // Short name
     var shortName: String?
@@ -32,10 +46,9 @@ struct TJPerson: Codable
         {
             shortLabel += String(fLabel)
         }
-        
-        // Last name Short Literal
-        if let lLabel  = lname?.first
+        else if let lLabel  = lname?.first
         {
+            // Last name Short Literal
             shortLabel += String(lLabel)
         }
         return shortLabel

@@ -75,7 +75,13 @@ extension TJMainViewController: UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: TJConstants.CellIdentifiers.personCell) as! TJPersonTableViewCell
+        let person                      = persons![indexPath.row]
+        cell.lblName.text              = person.fullName
+        cell.lblCity.text              = person.city
+        cell.lblInitial.text           = person.shortName
+        cell.vwInitial.backgroundColor = person.getRandomColor()
+        return cell
     }
 }
 

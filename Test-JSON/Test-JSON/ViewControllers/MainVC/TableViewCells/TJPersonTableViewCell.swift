@@ -23,4 +23,11 @@ class TJPersonTableViewCell: UITableViewCell
     
     // City name
     @IBOutlet weak var lblCity: UILabel!
+    
+    // Customization
+    override func awakeFromNib()
+    {
+        super.awakeFromNib()
+        self.vwInitial.layer.cornerRadius = self.vwInitial.frame.height/2
+    }
 }

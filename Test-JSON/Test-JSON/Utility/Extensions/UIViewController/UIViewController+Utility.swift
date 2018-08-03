@@ -68,7 +68,7 @@ extension UIViewController
         else
         {
             var config                    = SwiftMessages.defaultConfig
-            config.duration               = .forever
+            config.duration               = .automatic
             // Show the message.
             SwiftMessages.show(config: config, view: view)
         }
