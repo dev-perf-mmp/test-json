@@ -4,6 +4,7 @@
 //
 //  Created by Midhun on 02/08/18.
 //  Copyright © 2018 Midhun. All rights reserved.
+//  Represents the main page
 //
 
 import UIKit

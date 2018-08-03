@@ -13,6 +13,8 @@
 		D94A59EC211327E100B47A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A59EB211327E100B47A3A /* Assets.xcassets */; };
 		D94A59EF211327E100B47A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A59ED211327E100B47A3A /* LaunchScreen.storyboard */; };
 		D971A15321142297005C468B /* TJPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15221142297005C468B /* TJPerson.swift */; };
+		D971A15621142A15005C468B /* TJWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15521142A15005C468B /* TJWebAPI.swift */; };
+		D971A15821142B6F005C468B /* TJWebAPIContstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15721142B6F005C468B /* TJWebAPIContstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D94A59EE211327E100B47A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D94A59F0211327E100B47A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D971A15221142297005C468B /* TJPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJPerson.swift; sourceTree = "<group>"; };
+		D971A15521142A15005C468B /* TJWebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJWebAPI.swift; sourceTree = "<group>"; };
+		D971A15721142B6F005C468B /* TJWebAPIContstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJWebAPIContstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		D94A59E3211327DE00B47A3A /* Test-JSON */ = {
 			isa = PBXGroup;
 			children = (
+				D971A154211429FF005C468B /* WebAPI */,
 				D971A15121142260005C468B /* Models */,
 				D971A14F2114218F005C468B /* ViewControllers */,
 				D971A14E21142182005C468B /* AppDelegate */,
@@ -97,6 +102,15 @@
 				D971A15221142297005C468B /* TJPerson.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D971A154211429FF005C468B /* WebAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D971A15521142A15005C468B /* TJWebAPI.swift */,
+				D971A15721142B6F005C468B /* TJWebAPIContstants.swift */,
+			);
+			path = WebAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +188,8 @@
 				D971A15321142297005C468B /* TJPerson.swift in Sources */,
 				D94A59E7211327DE00B47A3A /* MainViewController.swift in Sources */,
 				D94A59E5211327DE00B47A3A /* AppDelegate.swift in Sources */,
+				D971A15821142B6F005C468B /* TJWebAPIContstants.swift in Sources */,
+				D971A15621142A15005C468B /* TJWebAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
