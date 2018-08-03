@@ -18,6 +18,7 @@
 		D971A15821142B6F005C468B /* TJWebAPIContstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15721142B6F005C468B /* TJWebAPIContstants.swift */; };
 		D971A15D21142FBA005C468B /* UIViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15C21142FBA005C468B /* UIViewController+Utility.swift */; };
 		D971A16021143016005C468B /* TJConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15F21143016005C468B /* TJConstants.swift */; };
+		D971A1632114512C005C468B /* TJPersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A1622114512C005C468B /* TJPersonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D971A15721142B6F005C468B /* TJWebAPIContstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJWebAPIContstants.swift; sourceTree = "<group>"; };
 		D971A15C21142FBA005C468B /* UIViewController+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utility.swift"; sourceTree = "<group>"; };
 		D971A15F21143016005C468B /* TJConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJConstants.swift; sourceTree = "<group>"; };
+		D971A1622114512C005C468B /* TJPersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJPersonTableViewCell.swift; sourceTree = "<group>"; };
 		EC201BB45599FA32520C486D /* Pods-Test-JSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-JSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test-JSON/Pods-Test-JSON.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 		D971A1502114219A005C468B /* MainVC */ = {
 			isa = PBXGroup;
 			children = (
+				D971A1612114510B005C468B /* TableViewCells */,
 				D94A59E6211327DE00B47A3A /* TJMainViewController.swift */,
 			);
 			path = MainVC;
@@ -173,6 +176,14 @@
 				D971A15F21143016005C468B /* TJConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		D971A1612114510B005C468B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D971A1622114512C005C468B /* TJPersonTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +325,7 @@
 				D971A15821142B6F005C468B /* TJWebAPIContstants.swift in Sources */,
 				D971A15621142A15005C468B /* TJWebAPI.swift in Sources */,
 				D971A16021143016005C468B /* TJConstants.swift in Sources */,
+				D971A1632114512C005C468B /* TJPersonTableViewCell.swift in Sources */,
 				D971A15D21142FBA005C468B /* UIViewController+Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UZJ3ABV58K;
+				DEVELOPMENT_TEAM = ZBA4HSBAFZ;
 				INFOPLIST_FILE = "Test-JSON/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -479,7 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UZJ3ABV58K;
+				DEVELOPMENT_TEAM = ZBA4HSBAFZ;
 				INFOPLIST_FILE = "Test-JSON/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

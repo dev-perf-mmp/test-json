@@ -47,7 +47,7 @@ extension TJWebAPI
         let url            = TJWebURL.person.url
         var request        = URLRequest(url: url)
         request.httpMethod = "GET"
-        request            = setCommonHTTPHeaders(request: request)
+        // request            = setCommonHTTPHeaders(request: request)
         callAsynchronousWebService(withRequest: request, andCompletionHandler: completion)
     }
 }
