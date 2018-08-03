@@ -21,7 +21,10 @@ class TJMainViewController: UIViewController
     // MARK: Properties
     
     // Person data
-    var persons: [TJPerson]?
+    fileprivate var contactsData: [String: [TJPerson]]?
+    
+    // Section Titles
+    fileprivate var sectionTitles: [String]?
     
     // Reachability
     fileprivate let reachability = Reachability()
@@ -50,10 +53,10 @@ extension TJMainViewController: UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int
     {
         var numOfSections: Int = 0
-        if (persons?.count ?? 0) > 0
+        if (sectionTitles?.count ?? 0) > 0
         {
             tableView.separatorStyle = .singleLine
-            numOfSections            = 1
+            numOfSections            = (sectionTitles?.count ?? 0)
             tableView.backgroundView = nil
         }
         else
@@ -70,18 +73,24 @@ extension TJMainViewController: UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return persons?.count ?? 0
+        let contacts = contactsData![sectionTitles![section]]
+        return contacts?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: TJConstants.CellIdentifiers.personCell) as! TJPersonTableViewCell
-        let person                     = persons![indexPath.row]
+        let person                     = contactsData![sectionTitles![indexPath.section]]![indexPath.row]
         cell.lblName.text              = person.fullName
         cell.lblCity.text              = person.city
         cell.lblInitial.text           = person.shortName
         cell.vwInitial.backgroundColor = person.getRandomColor()
         return cell
+    }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]?
+    {
+        return sectionTitles
     }
 }
 
@@ -100,8 +109,8 @@ extension TJMainViewController
             {
                 if let data = data, let persons = try? JSONDecoder().decode([TJPerson].self, from: data)
                 {
-                    self.persons = persons
-                    self.tblPeople.reloadData()
+                    let contacts = persons
+                    self.sortContacts(contacts)
                 }
             }
         }
@@ -118,7 +127,7 @@ extension TJMainViewController
             DispatchQueue.main.async
             {
                 self.hideMessages()
-                if let personData = self.persons, personData.count > 0
+                if let personData = self.sectionTitles, personData.count > 0
                 {
                     self.showInfoMessage(withTitle: TJConstants.Messages.netSuccessTitle, andMessage: TJConstants.Messages.netSuccessMsg)
                 }
@@ -144,5 +153,54 @@ extension TJMainViewController
         {
             print("Unable to start notifier")
         }
+    }
+}
+
+// MARK:- Utility
+extension TJMainViewController
+{
+    
+    /// Sorts the contacts
+    ///
+    /// - Parameter contactsArray: Contacts array
+    func sortContacts(_ contactsArray: [TJPerson])
+    {
+        var contacts = contactsArray
+        contacts.sort(by: { (first, second) -> Bool in
+            return first.fullName! < second.fullName!
+        })
+        generateIndexTitles(forContacts: contacts)
+    }
+    
+    
+    /// Generates the index titles
+    ///
+    /// - Parameter forContacts: Contacts array
+    func generateIndexTitles(forContacts contacts: [TJPerson])
+    {
+        contactsData         = [String: [TJPerson]]()
+        sectionTitles        = [String]()
+        
+        // Loops through tht items
+        for item in contacts
+        {
+            if let firstCharacter = item.fullName?.first
+            {
+                // Creating the index title
+                let firstLetter  = String(firstCharacter)
+                
+                // Storing contacts in corresponding section
+                var contactArray = contactsData![firstLetter] ?? [TJPerson]()
+                contactArray.append(item)
+                contactsData![firstLetter] = contactArray
+                
+                // Storing the section title
+                if !sectionTitles!.contains(firstLetter)
+                {
+                    sectionTitles?.append(firstLetter)
+                }
+            }
+        }
+        tblPeople.reloadData()
     }
 }

@@ -25,11 +25,13 @@ struct TJPerson: Codable
     var fullName: String?
     {
         var fullName = ""
-        if let fName = fname
+        // First Name
+        if let fName = fname?.capitalized
         {
             fullName += fName + " "
         }
-        if let lName = lname
+        // Appending Last Name
+        if let lName = lname?.capitalized
         {
             fullName += lName
         }
@@ -42,11 +44,11 @@ struct TJPerson: Codable
         var shortLabel = ""
         
         // Firstname Short Literal
-        if let fLabel  = fname?.first
+        if let fLabel = fname?.first
         {
             shortLabel += String(fLabel)
         }
-        else if let lLabel  = lname?.first
+        else if let lLabel = lname?.first
         {
             // Last name Short Literal
             shortLabel += String(lLabel)
