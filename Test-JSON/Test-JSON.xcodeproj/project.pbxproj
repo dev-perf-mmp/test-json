@@ -7,21 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A9CA4F9E9D3E08760A31E89 /* Pods_Test_JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA196BE4B078069EF3377C7 /* Pods_Test_JSON.framework */; };
 		D94A59E5211327DE00B47A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A59E4211327DE00B47A3A /* AppDelegate.swift */; };
-		D94A59E7211327DE00B47A3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A59E6211327DE00B47A3A /* ViewController.swift */; };
+		D94A59E7211327DE00B47A3A /* TJMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A59E6211327DE00B47A3A /* TJMainViewController.swift */; };
 		D94A59EA211327DF00B47A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A59E8211327DE00B47A3A /* Main.storyboard */; };
 		D94A59EC211327E100B47A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A59EB211327E100B47A3A /* Assets.xcassets */; };
 		D94A59EF211327E100B47A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A59ED211327E100B47A3A /* LaunchScreen.storyboard */; };
+		D971A15321142297005C468B /* TJPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15221142297005C468B /* TJPerson.swift */; };
+		D971A15621142A15005C468B /* TJWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15521142A15005C468B /* TJWebAPI.swift */; };
+		D971A15821142B6F005C468B /* TJWebAPIContstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15721142B6F005C468B /* TJWebAPIContstants.swift */; };
+		D971A15D21142FBA005C468B /* UIViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15C21142FBA005C468B /* UIViewController+Utility.swift */; };
+		D971A16021143016005C468B /* TJConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A15F21143016005C468B /* TJConstants.swift */; };
+		D971A1632114512C005C468B /* TJPersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971A1622114512C005C468B /* TJPersonTableViewCell.swift */; };
+		D971A177211470AD005C468B /* Raleway-Bold_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A165211470AD005C468B /* Raleway-Bold_0.ttf */; };
+		D971A178211470AD005C468B /* Raleway-MediumItalic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A166211470AD005C468B /* Raleway-MediumItalic_0.ttf */; };
+		D971A179211470AD005C468B /* Raleway-Italic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A167211470AD005C468B /* Raleway-Italic_0.ttf */; };
+		D971A17A211470AD005C468B /* Raleway-Light_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A168211470AD005C468B /* Raleway-Light_0.ttf */; };
+		D971A17B211470AD005C468B /* Raleway-Thin_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A169211470AD005C468B /* Raleway-Thin_0.ttf */; };
+		D971A17C211470AD005C468B /* Raleway-Black_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A16A211470AD005C468B /* Raleway-Black_0.ttf */; };
+		D971A17D211470AD005C468B /* Raleway-ExtraLightItalic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A16B211470AD005C468B /* Raleway-ExtraLightItalic_0.ttf */; };
+		D971A17E211470AD005C468B /* Raleway-BlackItalic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A16C211470AD005C468B /* Raleway-BlackItalic_0.ttf */; };
+		D971A17F211470AD005C468B /* Raleway-ExtraBold_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A16D211470AD005C468B /* Raleway-ExtraBold_0.ttf */; };
+		D971A180211470AD005C468B /* Raleway-Medium_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A16E211470AD005C468B /* Raleway-Medium_0.ttf */; };
+		D971A181211470AD005C468B /* Raleway-SemiBold_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A16F211470AD005C468B /* Raleway-SemiBold_0.ttf */; };
+		D971A182211470AD005C468B /* Raleway-ExtraLight_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A170211470AD005C468B /* Raleway-ExtraLight_0.ttf */; };
+		D971A183211470AD005C468B /* Raleway-Regular_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A171211470AD005C468B /* Raleway-Regular_0.ttf */; };
+		D971A184211470AD005C468B /* Raleway-ExtraBoldItalic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A172211470AD005C468B /* Raleway-ExtraBoldItalic_0.ttf */; };
+		D971A185211470AD005C468B /* Raleway-ThinItalic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A173211470AD005C468B /* Raleway-ThinItalic_0.ttf */; };
+		D971A186211470AD005C468B /* Raleway-SemiBoldItalic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A174211470AD005C468B /* Raleway-SemiBoldItalic_0.ttf */; };
+		D971A187211470AD005C468B /* Raleway-BoldItalic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A175211470AD005C468B /* Raleway-BoldItalic_0.ttf */; };
+		D971A188211470AD005C468B /* Raleway-LightItalic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D971A176211470AD005C468B /* Raleway-LightItalic_0.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3AA196BE4B078069EF3377C7 /* Pods_Test_JSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_JSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDD3105C5E9A77BE30E0ADC /* Pods-Test-JSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-JSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-JSON/Pods-Test-JSON.release.xcconfig"; sourceTree = "<group>"; };
 		D94A59E1211327DE00B47A3A /* Test-JSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-JSON.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94A59E4211327DE00B47A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D94A59E6211327DE00B47A3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D94A59E6211327DE00B47A3A /* TJMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJMainViewController.swift; sourceTree = "<group>"; };
 		D94A59E9211327DF00B47A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D94A59EB211327E100B47A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D94A59EE211327E100B47A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D94A59F0211327E100B47A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D971A15221142297005C468B /* TJPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJPerson.swift; sourceTree = "<group>"; };
+		D971A15521142A15005C468B /* TJWebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJWebAPI.swift; sourceTree = "<group>"; };
+		D971A15721142B6F005C468B /* TJWebAPIContstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJWebAPIContstants.swift; sourceTree = "<group>"; };
+		D971A15C21142FBA005C468B /* UIViewController+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utility.swift"; sourceTree = "<group>"; };
+		D971A15F21143016005C468B /* TJConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJConstants.swift; sourceTree = "<group>"; };
+		D971A1622114512C005C468B /* TJPersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJPersonTableViewCell.swift; sourceTree = "<group>"; };
+		D971A165211470AD005C468B /* Raleway-Bold_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold_0.ttf"; sourceTree = "<group>"; };
+		D971A166211470AD005C468B /* Raleway-MediumItalic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic_0.ttf"; sourceTree = "<group>"; };
+		D971A167211470AD005C468B /* Raleway-Italic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic_0.ttf"; sourceTree = "<group>"; };
+		D971A168211470AD005C468B /* Raleway-Light_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light_0.ttf"; sourceTree = "<group>"; };
+		D971A169211470AD005C468B /* Raleway-Thin_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin_0.ttf"; sourceTree = "<group>"; };
+		D971A16A211470AD005C468B /* Raleway-Black_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black_0.ttf"; sourceTree = "<group>"; };
+		D971A16B211470AD005C468B /* Raleway-ExtraLightItalic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic_0.ttf"; sourceTree = "<group>"; };
+		D971A16C211470AD005C468B /* Raleway-BlackItalic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic_0.ttf"; sourceTree = "<group>"; };
+		D971A16D211470AD005C468B /* Raleway-ExtraBold_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold_0.ttf"; sourceTree = "<group>"; };
+		D971A16E211470AD005C468B /* Raleway-Medium_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium_0.ttf"; sourceTree = "<group>"; };
+		D971A16F211470AD005C468B /* Raleway-SemiBold_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold_0.ttf"; sourceTree = "<group>"; };
+		D971A170211470AD005C468B /* Raleway-ExtraLight_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight_0.ttf"; sourceTree = "<group>"; };
+		D971A171211470AD005C468B /* Raleway-Regular_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular_0.ttf"; sourceTree = "<group>"; };
+		D971A172211470AD005C468B /* Raleway-ExtraBoldItalic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic_0.ttf"; sourceTree = "<group>"; };
+		D971A173211470AD005C468B /* Raleway-ThinItalic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic_0.ttf"; sourceTree = "<group>"; };
+		D971A174211470AD005C468B /* Raleway-SemiBoldItalic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic_0.ttf"; sourceTree = "<group>"; };
+		D971A175211470AD005C468B /* Raleway-BoldItalic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic_0.ttf"; sourceTree = "<group>"; };
+		D971A176211470AD005C468B /* Raleway-LightItalic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic_0.ttf"; sourceTree = "<group>"; };
+		EC201BB45599FA32520C486D /* Pods-Test-JSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-JSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test-JSON/Pods-Test-JSON.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +81,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9CA4F9E9D3E08760A31E89 /* Pods_Test_JSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F72B8CF62D68AD2A0F1CD42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AA196BE4B078069EF3377C7 /* Pods_Test_JSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53EB139536863A9CACCDD4B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC201BB45599FA32520C486D /* Pods-Test-JSON.debug.xcconfig */,
+				AFDD3105C5E9A77BE30E0ADC /* Pods-Test-JSON.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D94A59D8211327DE00B47A3A = {
 			isa = PBXGroup;
 			children = (
 				D94A59E3211327DE00B47A3A /* Test-JSON */,
 				D94A59E2211327DE00B47A3A /* Products */,
+				53EB139536863A9CACCDD4B7 /* Pods */,
+				3F72B8CF62D68AD2A0F1CD42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +126,126 @@
 		D94A59E3211327DE00B47A3A /* Test-JSON */ = {
 			isa = PBXGroup;
 			children = (
-				D94A59E4211327DE00B47A3A /* AppDelegate.swift */,
-				D94A59E6211327DE00B47A3A /* ViewController.swift */,
+				D971A15921142F92005C468B /* Utility */,
+				D971A154211429FF005C468B /* WebAPI */,
+				D971A15121142260005C468B /* Models */,
+				D971A14F2114218F005C468B /* ViewControllers */,
+				D971A14E21142182005C468B /* AppDelegate */,
+				D971A164211470AD005C468B /* Fonts */,
 				D94A59E8211327DE00B47A3A /* Main.storyboard */,
 				D94A59EB211327E100B47A3A /* Assets.xcassets */,
 				D94A59ED211327E100B47A3A /* LaunchScreen.storyboard */,
 				D94A59F0211327E100B47A3A /* Info.plist */,
 			);
 			path = "Test-JSON";
+			sourceTree = "<group>";
+		};
+		D971A14E21142182005C468B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D94A59E4211327DE00B47A3A /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D971A14F2114218F005C468B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D971A1502114219A005C468B /* MainVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D971A1502114219A005C468B /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				D971A1612114510B005C468B /* TableViewCells */,
+				D94A59E6211327DE00B47A3A /* TJMainViewController.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		D971A15121142260005C468B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D971A15221142297005C468B /* TJPerson.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D971A154211429FF005C468B /* WebAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D971A15521142A15005C468B /* TJWebAPI.swift */,
+				D971A15721142B6F005C468B /* TJWebAPIContstants.swift */,
+			);
+			path = WebAPI;
+			sourceTree = "<group>";
+		};
+		D971A15921142F92005C468B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D971A15E21143007005C468B /* Constants */,
+				D971A15A21142F9A005C468B /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D971A15A21142F9A005C468B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D971A15B21142FA3005C468B /* UIViewController */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D971A15B21142FA3005C468B /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D971A15C21142FBA005C468B /* UIViewController+Utility.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		D971A15E21143007005C468B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D971A15F21143016005C468B /* TJConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D971A1612114510B005C468B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D971A1622114512C005C468B /* TJPersonTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		D971A164211470AD005C468B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D971A165211470AD005C468B /* Raleway-Bold_0.ttf */,
+				D971A166211470AD005C468B /* Raleway-MediumItalic_0.ttf */,
+				D971A167211470AD005C468B /* Raleway-Italic_0.ttf */,
+				D971A168211470AD005C468B /* Raleway-Light_0.ttf */,
+				D971A169211470AD005C468B /* Raleway-Thin_0.ttf */,
+				D971A16A211470AD005C468B /* Raleway-Black_0.ttf */,
+				D971A16B211470AD005C468B /* Raleway-ExtraLightItalic_0.ttf */,
+				D971A16C211470AD005C468B /* Raleway-BlackItalic_0.ttf */,
+				D971A16D211470AD005C468B /* Raleway-ExtraBold_0.ttf */,
+				D971A16E211470AD005C468B /* Raleway-Medium_0.ttf */,
+				D971A16F211470AD005C468B /* Raleway-SemiBold_0.ttf */,
+				D971A170211470AD005C468B /* Raleway-ExtraLight_0.ttf */,
+				D971A171211470AD005C468B /* Raleway-Regular_0.ttf */,
+				D971A172211470AD005C468B /* Raleway-ExtraBoldItalic_0.ttf */,
+				D971A173211470AD005C468B /* Raleway-ThinItalic_0.ttf */,
+				D971A174211470AD005C468B /* Raleway-SemiBoldItalic_0.ttf */,
+				D971A175211470AD005C468B /* Raleway-BoldItalic_0.ttf */,
+				D971A176211470AD005C468B /* Raleway-LightItalic_0.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D94A59F3211327E100B47A3A /* Build configuration list for PBXNativeTarget "Test-JSON" */;
 			buildPhases = (
+				D91FFAA61D86857D2796CBBA /* [CP] Check Pods Manifest.lock */,
 				D94A59DD211327DE00B47A3A /* Sources */,
 				D94A59DE211327DE00B47A3A /* Frameworks */,
 				D94A59DF211327DE00B47A3A /* Resources */,
+				645348512977C0DEC51BF1F2 /* [CP] Embed Pods Frameworks */,
+				B0D74E6DCEF74C9B27ACCCD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -90,6 +277,7 @@
 		D94A59D9211327DE00B47A3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TJ;
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Midhun;
@@ -122,7 +310,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D971A187211470AD005C468B /* Raleway-BoldItalic_0.ttf in Resources */,
+				D971A17C211470AD005C468B /* Raleway-Black_0.ttf in Resources */,
+				D971A17F211470AD005C468B /* Raleway-ExtraBold_0.ttf in Resources */,
+				D971A177211470AD005C468B /* Raleway-Bold_0.ttf in Resources */,
 				D94A59EF211327E100B47A3A /* LaunchScreen.storyboard in Resources */,
+				D971A185211470AD005C468B /* Raleway-ThinItalic_0.ttf in Resources */,
+				D971A183211470AD005C468B /* Raleway-Regular_0.ttf in Resources */,
+				D971A17B211470AD005C468B /* Raleway-Thin_0.ttf in Resources */,
+				D971A178211470AD005C468B /* Raleway-MediumItalic_0.ttf in Resources */,
+				D971A17D211470AD005C468B /* Raleway-ExtraLightItalic_0.ttf in Resources */,
+				D971A188211470AD005C468B /* Raleway-LightItalic_0.ttf in Resources */,
+				D971A186211470AD005C468B /* Raleway-SemiBoldItalic_0.ttf in Resources */,
+				D971A182211470AD005C468B /* Raleway-ExtraLight_0.ttf in Resources */,
+				D971A17E211470AD005C468B /* Raleway-BlackItalic_0.ttf in Resources */,
+				D971A181211470AD005C468B /* Raleway-SemiBold_0.ttf in Resources */,
+				D971A179211470AD005C468B /* Raleway-Italic_0.ttf in Resources */,
+				D971A180211470AD005C468B /* Raleway-Medium_0.ttf in Resources */,
+				D971A184211470AD005C468B /* Raleway-ExtraBoldItalic_0.ttf in Resources */,
+				D971A17A211470AD005C468B /* Raleway-Light_0.ttf in Resources */,
 				D94A59EC211327E100B47A3A /* Assets.xcassets in Resources */,
 				D94A59EA211327DF00B47A3A /* Main.storyboard in Resources */,
 			);
@@ -130,13 +336,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		645348512977C0DEC51BF1F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Test-JSON/Pods-Test-JSON-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test-JSON/Pods-Test-JSON-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0D74E6DCEF74C9B27ACCCD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test-JSON/Pods-Test-JSON-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D91FFAA61D86857D2796CBBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test-JSON-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D94A59DD211327DE00B47A3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D94A59E7211327DE00B47A3A /* ViewController.swift in Sources */,
+				D971A15321142297005C468B /* TJPerson.swift in Sources */,
+				D94A59E7211327DE00B47A3A /* TJMainViewController.swift in Sources */,
 				D94A59E5211327DE00B47A3A /* AppDelegate.swift in Sources */,
+				D971A15821142B6F005C468B /* TJWebAPIContstants.swift in Sources */,
+				D971A15621142A15005C468B /* TJWebAPI.swift in Sources */,
+				D971A16021143016005C468B /* TJConstants.swift in Sources */,
+				D971A1632114512C005C468B /* TJPersonTableViewCell.swift in Sources */,
+				D971A15D21142FBA005C468B /* UIViewController+Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +548,11 @@
 		};
 		D94A59F4211327E100B47A3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC201BB45599FA32520C486D /* Pods-Test-JSON.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZBA4HSBAFZ;
 				INFOPLIST_FILE = "Test-JSON/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,9 +567,11 @@
 		};
 		D94A59F5211327E100B47A3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFDD3105C5E9A77BE30E0ADC /* Pods-Test-JSON.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZBA4HSBAFZ;
 				INFOPLIST_FILE = "Test-JSON/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
