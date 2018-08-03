@@ -46,5 +46,26 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Raleway-BlackItalic_0.ttf</string>
+		<string>Raleway-Black_0.ttf</string>
+		<string>Raleway-BoldItalic_0.ttf</string>
+		<string>Raleway-Bold_0.ttf</string>
+		<string>Raleway-ExtraBoldItalic_0.ttf</string>
+		<string>Raleway-ExtraBold_0.ttf</string>
+		<string>Raleway-ExtraLightItalic_0.ttf</string>
+		<string>Raleway-ExtraLight_0.ttf</string>
+		<string>Raleway-Italic_0.ttf</string>
+		<string>Raleway-LightItalic_0.ttf</string>
+		<string>Raleway-Light_0.ttf</string>
+		<string>Raleway-MediumItalic_0.ttf</string>
+		<string>Raleway-Medium_0.ttf</string>
+		<string>Raleway-Regular_0.ttf</string>
+		<string>Raleway-SemiBoldItalic_0.ttf</string>
+		<string>Raleway-SemiBold_0.ttf</string>
+		<string>Raleway-ThinItalic_0.ttf</string>
+		<string>Raleway-Thin_0.ttf</string>
+	</array>
 </dict>
 </plist>
